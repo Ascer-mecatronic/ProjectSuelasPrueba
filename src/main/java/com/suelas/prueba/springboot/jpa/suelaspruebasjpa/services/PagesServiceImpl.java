@@ -221,7 +221,7 @@ public class PagesServiceImpl implements PagesService {
                     // filtramos en una lista los elementos del directorio que no coincidan con la
             // lista de uris traida de la bd
             List<String> urisDelete = urisDirectory.filter(uris -> !urisBd.contains(uris)).collect(Collectors.toList());
-            System.out.println("Elementos encontados= " + urisDelete.size() + " ------->" + urisDelete);
+            System.out.println("Elementos encontados = " + urisDelete.size() + " ------->" + urisDelete);
             if (urisDelete.size() != 0) {
                 urisDelete.forEach(uri -> {
                     Path pathDelete = Paths
